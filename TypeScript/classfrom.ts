@@ -14,4 +14,8 @@ let w1 = new Workers("Name", "Surname", 33);
 
 let w2 = new Person("Name2", "Surname2", 22);
 
-alert(w1.name);
+let workersArray = [w1, w2];
+
+workersArray.forEach(function (item) {
+    console.log(`${item.name},${item.surname},${item.age}`);
+});

@@ -22,4 +22,7 @@ var Workers = /** @class */ (function (_super) {
 // Polymorphism
 var w1 = new Workers("Name", "Surname", 33);
 var w2 = new Person("Name2", "Surname2", 22);
-alert(w1.name);
+var workersArray = [w1, w2];
+workersArray.forEach(function (item) {
+    console.log(item.name + "," + item.surname + "," + item.age);
+});
